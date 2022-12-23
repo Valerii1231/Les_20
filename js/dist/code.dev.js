@@ -1,6 +1,8 @@
+"use strict";
+
 // 1
-let a = +prompt('Enter a ');
-let b = +prompt('Enter b ');
+var a = +prompt('Enter a ');
+var b = +prompt('Enter b ');
 
 function maxNumber(a, b) {
   if (a > b) {
@@ -13,45 +15,41 @@ function maxNumber(a, b) {
     }
   }
 }
+
 if (a === b) {
-  alert(`${ maxNumber(a, b) } = ${ maxNumber(a, b) }`);
+  alert("".concat(maxNumber(a, b), " = ").concat(maxNumber(a, b)));
 } else {
   alert(maxNumber(a, b));
-}
+} //  2
 
 
-
-//  2
-let number = +prompt('Enter the number');
+var number = +prompt('Enter the number');
 
 function revers(number) {
   nunber = -number;
   return nunber;
 }
-alert(revers(number));
 
+alert(revers(number)); //  3
 
-
-//  3
-let number1 = prompt('Enter the number');
-let count = prompt('Enter the count');
+var number1 = prompt('Enter the number');
+var count = prompt('Enter the count');
 
 function three(number1, count) {
-  return (number1 + 3 * count);
+  return number1 + 3 * count;
 }
-alert(three(+number1, +count));
 
+alert(three(+number1, +count)); //  4
 
-
-//  4
-let km = +prompt('Enter the km');
-let metric = prompt('Enter the metric');
+var km = +prompt('Enter the km');
+var metric = prompt('Enter the metric');
 
 function getMetric(metric, km, m, cm) {
   switch (metric) {
     case 'm':
       m(km);
       return meter;
+
     case 'cm':
       cm(km);
       return centimeter;
